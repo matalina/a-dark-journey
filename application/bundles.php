@@ -43,14 +43,6 @@ return array(
   
   'sparkdown',
   
-  'gravitas' => array(
-    'autoloads' => array(
-      'map' => array(
-        'Gravitas\\API' => '(:bundle)/api.php',
-      ),
-    ),
-  ),
-  
   'bootstrapper' => array('auto' => true),
 
 );
