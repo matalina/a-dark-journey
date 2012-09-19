@@ -6,5 +6,4 @@
 ### Laravel Bundles
 * ChromePhp
 * Sparkdown
-* Gravitas
 * Bootstrapper
