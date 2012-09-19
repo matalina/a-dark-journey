@@ -37,9 +37,6 @@
       @if(Session::get('danger'))
         {{ Alert::success(Session::get('danger')) }}
       @endif
-      <div class="row-fluid">
-        <div class="span12 bc"></div>
-      </div>
       <article class="row-fluid">
         <div class="span10 offset1">
           @yield('content')
