@@ -11,17 +11,18 @@
     <title>@yield('title')</title>
     <!-- Bootstrap -->
     {{ Asset::container('bootstrapper')->styles() }}
-    <link href='http://fonts.googleapis.com/css?family=Creepster|Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Eagle+Lake|Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
     {{ HTML::style('assets/css/style.css') }}
     
   </head>
   <body>
-    <header>
-      <nav class="navbar">
-        @yield('navbar')  
-      </nav>
-    </header>
     <div class="container">
+      <header class="row-fluid">
+        <div class="span9 visible-desktop"></div>
+        <div class="span3">
+          {{ HTML::image('assets/images/logo.png','A Dark Journey',array('id' => 'logo')); }}
+        </div>
+      </header>
       @if(Session::get('success'))
         {{ Alert::success(Session::get('success')) }}
       @endif
@@ -37,17 +38,22 @@
       @if(Session::get('danger'))
         {{ Alert::success(Session::get('danger')) }}
       @endif
+      <div class="row-fluid">
+        <div class="span12 bc"></div>
+      </div>
       <article class="row-fluid">
-        <div class="span10 offset1">
+        <div class="span1 visible-desktop"></div>
+        <div class="span10" id="main">
           @yield('content')
         </div>
-        <div class="push"></div>
+        <div class="span1 visible-desktop"></div>
       </article>
       <div class="row-fluid">
         <div class="span12 bc"></div>
       </div>
       <footer class="row-fluid">
-        <div class="span3 offset9">
+        <div class="span9 visible-desktop"></div>
+        <div class="span3">
           <p>
             &copy; 1999 - {{ date('Y') }} <a href="http://journal.aliciawilkerson.com">Alicia Wilkerson</a>
           </p>

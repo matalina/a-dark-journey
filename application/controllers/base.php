@@ -13,8 +13,8 @@ class Base_Controller extends Controller
     
     $this->structure = $structure;
     
-    $menus = array(
-
+    /*$menus = array(
+      
     );
     
     $logo = HTML::image('assets/images/logo.png','A Dark Journey',array('id' => 'logo'));
@@ -22,7 +22,7 @@ class Base_Controller extends Controller
     $attr = array('class' => 'navbar-inverse');
     $navbar = Navbar::create($logo, URL::to('/'), $menus, Navbar::FIX_TOP, true, $attr);
     
-    Section::inject('navbar', $navbar);
+    Section::inject('navbar', $navbar);*/
   }
   
 	/**

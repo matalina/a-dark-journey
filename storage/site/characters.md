@@ -2,10 +2,10 @@
 
 ##Vampires
 * Cari Giovanni
-* Antonio Giovanni (Tony)
-* Anthony Giovanni (Ant)
+* Antonio Giovanni aka Tony
+* Anthony Giovanni aka Ant
 * Francesco Giovanni
-* Salador Einor
+* Salvador Einor aka Sal
 * Aurora Dejesus
 
 ##Humans

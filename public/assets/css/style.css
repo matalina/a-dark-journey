@@ -7,8 +7,8 @@ html {
 }
 body {
   background: transparent;
-  padding-top: 86px;
   font-family: 'Open Sans', sans-serif;
+  padding-top: 0;
 }
 article {
   background: rgba(255,255,255,.7);
@@ -55,9 +55,6 @@ a:hover {
 }
 .navbar-inverse .navbar-inner a:hover {
   color: #ff0000;
-}
-#logo {
-  height: 70px;
 }
 .breadcrumb {
   background: rgba(255,255,255,.7);
