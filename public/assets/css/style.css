@@ -68,6 +68,9 @@ a:hover {
 .breadcrumb .divider {
   color: #000000;
 }
+a:not([href*="http://a-dark-journey.dev"])::after {
+  content: ' \21D2';
+}
 /*****
  * Stick Footer 
  *****/
