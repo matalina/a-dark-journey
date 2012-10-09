@@ -8,21 +8,27 @@ class Base_Controller extends Controller
   public function __construct() {
     parent::__construct();
     
-    $structure = Parse::structure(path('storage').'site');
+    $structure = Parse::structure(path('storage').'site/wiki');
     ksort($structure,SORT_STRING);
     
     $this->structure = $structure;
     
-    /*$menus = array(
-      
+    $menus = array(
+      array(
+        'attributes' => array(),
+        'items' => array(
+          array('label'=>'Wiki', 'url' => URL::to('/')),
+          array('label'=>'Works', 'url'=> URL::to_action('works@view')),
+        )
+      )
     );
     
     $logo = HTML::image('assets/images/logo.png','A Dark Journey',array('id' => 'logo'));
     
     $attr = array('class' => 'navbar-inverse');
-    $navbar = Navbar::create($logo, URL::to('/'), $menus, Navbar::FIX_TOP, true, $attr);
+    $navbar = Navbar::create('A Dark Journey', URL::to('/'), $menus, Navbar::FIX_TOP, true, $attr);
     
-    Section::inject('navbar', $navbar);*/
+    Section::inject('navbar', $navbar);
   }
   
 	/**

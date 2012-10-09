@@ -7,5 +7,5 @@ There is much about this world that needs to be documented for consistency in th
 ##Characters
 All characters have their own stories that you may or may not see in the pieces that are derived from this world. Here you can find all the characters created no matter how little or big they seem in the story.
 
-##Derivatives
+##[Works](works/view)
 I’ve started keeping some writing here as well.  They are all set in this world, mostly from the point of view of my main character, but sometimes they are from other points of view.

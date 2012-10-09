@@ -3,7 +3,8 @@
 class Page_Controller extends Base_Controller {
   public function get_view($slug = '')
   {
-    $path = path('storage').'site/'.$slug.'.md';
+
+    $path = path('storage').'site/wiki/'.$slug.'.md';
     
     if(!is_file($path)) {
       return Response::error('404');

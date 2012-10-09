@@ -16,6 +16,7 @@
     
   </head>
   <body>
+    @yield('navbar')
     <div class="container">
       <header class="row-fluid">
         <div class="span9 visible-desktop"></div>
@@ -38,9 +39,6 @@
       @if(Session::get('danger'))
         {{ Alert::success(Session::get('danger')) }}
       @endif
-      <div class="row-fluid">
-        <div class="span12 bc"></div>
-      </div>
       <article class="row-fluid">
         <div class="span1 visible-desktop"></div>
         <div class="span10" id="main">
@@ -48,9 +46,6 @@
         </div>
         <div class="span1 visible-desktop"></div>
       </article>
-      <div class="row-fluid">
-        <div class="span12 bc"></div>
-      </div>
       <footer class="row-fluid">
         <div class="span9 visible-desktop"></div>
         <div class="span3">
@@ -61,7 +56,6 @@
       </footer>
     </div>
     {{ Asset::container('bootstrapper')->scripts() }}
-    {{ HTML::script('assets/js/jquery.jcrumb.js') }}
     {{ HTML::script('assets/js/script.js') }}
   </body>
 </html>
