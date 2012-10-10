@@ -32,16 +32,6 @@
 |
 */
 
-/*$user = new User();
-
-$user->username = 'Matalina';
-$user->password = Hash::make('ka12si03');
-$user->first_name = 'Alicia';
-$user->last_name = 'Wilkerson';
-$user->email = 'matalina@gmail.com';
-
-$user->save();*/
-
 Bundle::start('sparkdown');
 Route::controller(Controller::detect());
 

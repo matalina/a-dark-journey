@@ -49,8 +49,8 @@
               /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
               var disqus_shortname = 'adarkjourney'; // required: replace example with your forum shortname
               var disqus_developer = 1; // developer mode on
-              var disqus_identifier = @yield('disqus_id'); // unique identifier
-              var disqus_url = {{ URL::current() }}; // current url
+              var disqus_identifier = '{{ URI::current() }}'; // unique identifier
+              var disqus_url = '{{ URL::full() }}'; // current url
   
               /* * * DON'T EDIT BELOW THIS LINE * * */
               (function() {
